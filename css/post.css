@@ -1,0 +1,171 @@
+/* ======
+Blog Post
+====== */
+
+.blog-header h2 {
+  color: var(--logo);
+  line-height: 50px;
+  margin-bottom: 40px;
+}
+
+.post {
+  padding: 2em;
+  display: grid;
+  justify-content: center;
+  gap: 1em;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "postimage"
+    "blogtext"
+    "comment"
+    "sidebar";
+}
+
+.post-header {
+  margin: 30px;
+}
+
+.sideposts-header,
+.post-subheader,
+.sideposts-recent {
+  margin: 10px 0px 10px 0px;
+}
+
+/* Blog post content */
+
+.post-image {
+  max-width: 500px;
+}
+
+.post-image img {
+  grid-area: postimage;
+  height: auto;
+  max-width: 100%;
+  cursor: pointer;
+}
+
+.text-container {
+  margin-top: 40px;
+}
+
+.blog-text {
+  grid-area: blogtext;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+}
+
+.blog-text h1 {
+  padding: 10px;
+}
+
+.blog-text p {
+  margin-bottom: 10px;
+  color: var(--text);
+}
+
+/* =====
+  Modal
+  ===== */
+
+.post-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #00000080;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.35s ease-in;
+  z-index: 3;
+}
+.modal-content {
+  display: flex;
+  flex-direction: column;
+}
+.post-image-modal img {
+  display: block;
+  height: 100%;
+  max-width: 100%;
+}
+
+.post-modal.is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* additional */
+/* .care-info {
+    grid-area: careinfo;
+    text-align: center;
+  } */
+
+.blog-header::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  margin: 0px 0px 20px 0px;
+  background: var(--green);
+}
+
+/* ======
+  Comment field
+  ====== */
+
+.comment-section {
+  grid-area: comment;
+}
+
+.comment-section label {
+  display: block;
+  margin: 10px;
+  font-family: "DM serif display", Helvetica, sans-serif;
+  font-size: 1.5rem;
+  color: var(--green-dark);
+}
+
+#comment-field input,
+.comment-section textarea {
+  border: 2px solid var(--green-dark);
+  width: 100%;
+  padding: 1em;
+  margin-top: 10px;
+}
+
+.comment-section textarea {
+  resize: none;
+  height: 150px;
+}
+
+.comment-section .btn {
+  width: 150px;
+}
+
+/* ======
+  Media Queries
+  ====== */
+
+@media (min-width: 801px) {
+  .post {
+    grid-template-columns: auto;
+    grid-template-areas:
+      "postimage postimage sidebar"
+      "blogtext blogtext  sidebar"
+      "comment comment ....";
+  }
+
+  .post-image-modal img {
+    max-width: 80vw;
+  }
+}
+
+@media (min-width: 601px) {
+  .post-modal {
+    padding: 2em;
+  }
+}

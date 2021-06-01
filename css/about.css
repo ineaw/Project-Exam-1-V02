@@ -1,0 +1,71 @@
+/* ======
+ About section
+  ====== */
+
+.about {
+  padding: 4em 4em;
+  display: grid;
+  justify-content: center;
+  gap: 2em;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "aboutimage"
+    "abouttext"
+    "sidebar";
+}
+
+.about-header {
+  margin: 30px 0px;
+}
+
+.about-subheader {
+  font-size: 1.5rem;
+  line-height: 25px;
+  text-align: left;
+}
+
+.sideposts-header,
+.about-subheader,
+.sideposts-recent {
+  margin: 10px 0px 10px 0px;
+}
+
+/* About post content */
+
+.about-image img {
+  grid-area: aboutimage;
+  width: 100%;
+  height: auto;
+}
+
+.about-text {
+  grid-area: abouttext;
+  max-width: 600px;
+  min-width: 200px;
+  margin: 0 auto;
+}
+
+.sideposts p {
+  color: var(--text);
+}
+
+.email-error p {
+  color: rgb(105, 20, 20);
+  font-size: 0.9rem;
+}
+
+/* ======
+    Media Queries
+    ====== */
+
+@media (min-width: 801px) {
+  .about {
+    grid-template-columns: minmax(300px, 50%) minmax(1em, 1em) minmax(1em, 1em) minmax(150px, 25%);
+    grid-template-areas:
+      "postimage postimage sidebar"
+      "blogtext blogtext ....";
+  }
+}
+
+@media (min-width: 600px) {
+}

@@ -1,0 +1,320 @@
+/* =====
+typography
+===== */
+
+/* Hero */
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 400;
+  max-width: 600px;
+  color: var(--accent);
+  margin-bottom: 10vh;
+  text-align: left;
+}
+
+.hero-btn {
+  font-size: 1.2em;
+}
+
+/* Carousel */
+
+.carousel-container h2 {
+  color: var(--green);
+}
+
+.carousel-title {
+  max-width: 250px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  color: var(--green);
+}
+
+.carousel-title,
+.new-post-title {
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin: 0em;
+}
+
+/* News & Newsletter */
+
+.news h2,
+.news a,
+.news-text,
+.newsletter p,
+.newsletter h2 {
+  color: var(--accent);
+}
+
+.news-text,
+.newsletter p {
+  max-width: 450px;
+}
+
+/* =====
+  Hero
+  ===== */
+
+.hero {
+  background-image: url(../images/succulent-side.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-card {
+  padding: 3em;
+  margin-left: 0vw;
+  margin-bottom: 10vh;
+}
+
+/* =====
+    Featured Posts Carousel
+    ===== */
+
+.carousel-container {
+  padding: 3em;
+}
+
+.carousel-wrap {
+  display: flex;
+  flex-wrap: nowrap;
+  max-width: 100vw;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: 100%;
+  max-width: 90vw;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 50%;
+  padding: 1em;
+}
+
+.carousel-container button {
+  position: absolute;
+  display: block;
+  border: none;
+  padding: 0em 0.3em;
+  background: none;
+  font-size: 3rem;
+  cursor: pointer;
+  margin-top: 150px;
+  color: var(--green);
+  z-index: 3;
+}
+
+#next-btn {
+  right: 0;
+  margin-right: 0px;
+}
+
+#prev-btn {
+  left: 0;
+  margin-left: 0px;
+}
+
+#prev-btn:focus,
+#next-btn:focus,
+#prev-btn:hover,
+#next-btn:hover {
+  background: #ffffff83;
+  border-radius: 2px;
+}
+
+.carousel-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 300px;
+  height: auto;
+  margin-right: 2em;
+  padding-bottom: 1em;
+}
+
+.carousel-card {
+  overflow: hidden;
+  scroll-snap-align: center;
+}
+
+.carousel-card img {
+  max-width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+/*=====
+  Newest posts
+  ====== */
+
+.newest-posts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.new-post-wrap {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr;
+  margin-bottom: 30px;
+  max-width: 100vw;
+}
+
+.new-post-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 100%;
+  margin: 0px 5px;
+  padding: 0em 0em 1em 0em;
+}
+
+.new-post-card img {
+  height: auto;
+  max-width: 100%;
+}
+
+/* =====
+  Newsletter
+  ==== */
+
+.news,
+.newest-posts,
+.newsletter {
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* headline news section */
+
+.news {
+  color: var(--accent);
+  width: 100%;
+  background-color: var(--lila-accent);
+}
+
+.news .btn {
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  align-self: center;
+}
+
+.news .btn:hover,
+.news a:hover {
+  color: var(--lila-accent);
+  background-color: var(--accent);
+}
+
+/* Newsletter */
+
+.newsletter {
+  background-color: var(--lila-accent);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.newsletter .btn:hover,
+.newsletter .btn:focus {
+  color: var(--mainlight);
+}
+
+.sign-up {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter input {
+  font-size: 1rem;
+  padding: 0.4em;
+  width: 220px;
+  border: none;
+  background-color: var(--white);
+  margin: 5px 10px 0px 0px;
+}
+
+.newsletter input:focus {
+  border: 2px solid var(--accent);
+}
+
+.email-error p {
+  color: rgb(105, 20, 20);
+  font-size: 0.9rem;
+}
+
+/* =====
+  Media Queries
+  ===== */
+
+/* Desktop Screens */
+
+@media only screen and (min-width: 801px) {
+  .new-post-wrap {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero-card {
+    padding: 3em;
+    margin-left: 5vw;
+  }
+
+  .new-post-wrap,
+  .carousel {
+    max-width: 80vw;
+  }
+
+  .sign-up {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .carousel-wrap button {
+    font-size: 3rem;
+  }
+
+  .newsletter input {
+    background-color: var(--lila-accent);
+    box-shadow: inset 0 -0.2em var(--accent);
+  }
+
+  .newsletter input:focus {
+    background-color: var(--white);
+  }
+}
+
+/* Larger desktop screens */
+
+@media only screen and (min-width: 1280px) {
+  .hero-title {
+    font-size: 4rem;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .new-post-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contact | The Green Side Blog</title>
+    <meta name="description" content="Contact one of the most enthusiastic plant carers there is" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="data:," />
+    <link rel="shortcut icon" type="image/png" href="images/tgs-icon-bg.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&family=Roboto+Slab:wght@400;500;700&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/40834ce6db.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Prata&display=swap" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/contact.css" rel="stylesheet" />
+  <body>
+    <header>
+      <section class="navigation">
+        <a href="index.html"><img class="logo" src="images/logo-tgs.png" alt="home button" /></a>
+        <div class="nav-container">
+          <button aria-label="open navigation" class="open-nav">☰</button>
+          <nav class="nav-content">
+            <button aria-label="close navigation" class="close-nav">×</button>
+            <ul class="nav-links">
+              <li><a href="index.html" class="nav-link" aria-label="Home page">Home</a></li>
+              <li><a href="blog.html" class="nav-link" aria-label="Blog page">Blog</a></li>
+              <li><a href="about.html" class="nav-link" aria-label="About me">About</a></li>
+              <li><a href="contact.html" class="nav-link" aria-label="Contact me">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+    </header>
+      <main class="contact-page">
+      <ul class="breadcrumbs">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <h1>Contact me</h1>
+      <section class="contact">
+                                <form id="contactForm">
+                              <div>
+                               <label for="fullName">
+                                   Name
+                                   <input name="fullName" placeholder="Enter name"  id="fullName"/>
+                               </label>
+                               <div class="form-error" id="fullNameError">Please enter at least 5 characters</div>
+                           </div>
+                           <div>
+                           <label for="email">
+                               Email
+                               <input name="email" placeholder="Enter email address" id="email"/>
+                           </label>
+                           <div class="form-error" id="emailError">Please enter a valid email address</div>
+                       </div>
+                           <div>
+                               <label for="subject">
+                                   Subject
+                                   <input name="subject" placeholder="Minimum 15 characters" id="subject"></input>
+                               </label>
+                               <div class="form-error" id="subjectError">Please enter minimum 15 characters</div>
+                           </div>
+                           <div>
+                           <label for="contactMessage">
+                           Mesage
+                            <textarea name="contactMessage" placeholder="Minimum 25 characters" id="contactMessage"></textarea>
+                        </label>
+                        <div class="form-error" id="contactMessageError">Please enter minimum 25 characters</div>
+                    </div>
+                           <button class="btn submit-button">Send</button>
+                           <div class="message"></div>
+                       </form>
+              </section>
+    </main>
+    <footer>
+      <footer>
+        <section class="footer">
+          <ul class="footer-main">
+            <li class="footer-link"><a href="about.html">About</a></li>
+            <li class="footer-link"><a href="contact.html">Contact</a></li>
+            <li class="footer-link"><a href="#">Disclosure</a></li>
+            <li class="footer-link"><a href="#">Privacy Policy</a></li>
+          </ul>
+          <ul class="footer-social">
+            <li class="social-link"><h3>Follow</h3></li>
+            <li class="social-link"><a href="#">Facebook</a></li>
+            <li class="social-link"><a href="#">Pinterest</a></li>
+            <li class="social-link"><a href="#">Instagram</a></li>
+          </ul>
+          <ul class="footer-podcast">
+            <li class="social-link"><h3>Listen</h3></li>
+            <li class="social-link"><a href="#">Spotify</a></li>
+            <li class="social-link"><a href="#">Apple Music</a></li>
+            <li class="social-link"><a href="#">Soundcloud</a></li>
+          </ul>
+        </section>
+        <p class="copyright">© Copyright 2021. All rights reserved. Website by Ine AW.</p>
+      </footer>
+    <script src="js/contact.js"></script>
+  <script src="js/components/navigation.js"></script>
+  <script src="js/components/errors.js"></script>
+</body>
+</html>

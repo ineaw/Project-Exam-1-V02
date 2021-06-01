@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>About | The Green Side Blog</title>
+    <meta name="description" content="Get to know the story behind making The Green Side accesible for everyone" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="data:," />
+    <link rel="shortcut icon" type="image/png" href="images/tgs-icon-bg.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&family=Roboto+Slab:wght@400;500;700&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/40834ce6db.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Prata&display=swap" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/about.css" rel="stylesheet" />
+    <link href="css/aside.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <section class="navigation">
+        <a href="index.html"><img class="logo" src="images/logo-tgs.png" alt="home button" /></a>
+        <div class="nav-container">
+          <button aria-label="open navigation" class="open-nav">☰</button>
+          <nav class="nav-content">
+            <button aria-label="close navigation" class="close-nav">×</button>
+            <ul class="nav-links">
+              <li><a href="index.html" class="nav-link" aria-label="Home page">Home</a></li>
+              <li><a href="blog.html" class="nav-link" aria-label="Blog page">Blog</a></li>
+              <li><a href="about.html" class="nav-link" aria-label="About me">About</a></li>
+              <li><a href="contact.html" class="nav-link" aria-label="Contact me">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+    </header>
+    <main>   
+         <ul class="breadcrumbs">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+      <article class="about">
+        <section class="about-container">
+          <figure class="about-image">
+            <img src="/images/ManWithPlant.jpg" alt="Man hiding behind a three big green plants"/>
+          </figure>
+          <div class="about-text">
+            <h1 class="about-header">Hi fellow plant friend!</h1>
+            <p><strong>My passion for plants started when</strong> et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. </p>
+            <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+            <h2 class="about-subheader">Never endig journey</h2>
+           <p> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,<em>totam rem aperiam,</em>  eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+           <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.  
+            <h2 class="about-subheader">Always learning</h2>
+            <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+          </div>
+        </section>
+        <aside class="sideposts">
+          <section>
+          <h3 class="sideposts-header">Recent posts</h3>
+          <div class="sideposts-recent">
+          </div>
+        <section>
+          <div class="newsletter">
+            <div class="newsletter-topic">
+              <h4>Join the green side</h4>
+            </div>
+            <div class="sign-up"> 
+          <input type="text" placeholder="Enter your e-mail address" id="signup-email" name="newsletter" aria-label="newsletter sign-up form">
+              <button class="btn signup" role="button">Sign up</button>
+              <div class="email-error"></div>
+              </div>
+          </div>
+        </section>
+        </aside>
+      </article>
+    </main>
+    <footer>
+      <section class="footer">
+        <ul class="footer-main">
+          <li class="footer-link"><a href="about.html">About</a></li>
+          <li class="footer-link"><a href="contact.html">Contact</a></li>
+          <li class="footer-link"><a href="#">Disclosure</a></li>
+          <li class="footer-link"><a href="#">Privacy Policy</a></li>
+        </ul>
+        <ul class="footer-social">
+          <li class="social-link"><h3>Follow</h3></li>
+          <li class="social-link"><a href="#">Facebook</a></li>
+          <li class="social-link"><a href="#">Pinterest</a></li>
+          <li class="social-link"><a href="#">Instagram</a></li>
+        </ul>
+        <ul class="footer-podcast">
+          <li class="social-link"><h3>Listen</h3></li>
+          <li class="social-link"><a href="#">Spotify</a></li>
+          <li class="social-link"><a href="#">Apple Music</a></li>
+          <li class="social-link"><a href="#">Soundcloud</a></li>
+        </ul>
+      </section>
+      <p class="copyright">© Copyright 2021. All rights reserved. Website by Ine AW.</p>
+    </footer>
+    <script src="js/components/navigation.js"></script>
+    <script src="js/components/recent.js"></script>
+    <script src="js/components/errors.js"></script>
+    <script src="js/components/forms.js"></script>
+  </body>
+</html>

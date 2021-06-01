@@ -1,0 +1,41 @@
+#contactForm {
+  max-width: 600px;
+  background-color: var(--lila-accent);
+  padding: 2em;
+}
+
+#contactForm label {
+  display: block;
+  margin: 10px 20px;
+  color: var(--green);
+  text-align: left;
+}
+
+#contactForm input,
+#contactForm textarea {
+  width: 100%;
+  border: none;
+  resize: none;
+  padding: 1em;
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+
+#contactForm textarea {
+  height: 200px;
+}
+
+.submit-button {
+  color: var(--green);
+  margin: 20px;
+}
+
+.form-error {
+  display: none;
+  color: rgb(105, 20, 20);
+  font-size: 0.9rem;
+  margin: 0px 20px;
+}
+
+@media (min-width: 801px) {
+}
