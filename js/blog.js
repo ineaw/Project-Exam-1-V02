@@ -93,7 +93,7 @@ morePosts.addEventListener("click", () => {
 // });
 
 const categoriesUrl = "https://ineaw.no/the-green-side/wp-json/wp/v2/categories";
-const categoriesContainer = document.querySelector(".blog-grid-2");
+const categoriesContainer = document.querySelector(".blog-grid-cat");
 
 async function displayCategories() {
   try {

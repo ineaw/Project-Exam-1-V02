@@ -47,7 +47,7 @@ function getCategories(result) {
   }
 }
 
-const categoriesContainer = document.querySelector(".blog-grid-2");
+const categoriesContainer = document.querySelector(".blog-grid-cat");
 
 async function displayCategories() {
   try {
