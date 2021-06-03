@@ -35,7 +35,9 @@ function createHTML(result) {
        <p class="blog-date"<time>${postDate}</time> | By <a href="./about.html">Ine AW</a></p>
       <h2 class="blog-title">${title}</h2>
        <a href="post.html?id=${post}" class="blog-link" aria-label="read more about ${title}">Read more</a>
-     </figure> `;
+     </figure>
+      `;
+
       loader.style.display = "none";
     }
   }
