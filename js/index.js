@@ -39,7 +39,7 @@ async function getPosts() {
       <h3 class="carousel-title">${title}</h3>
       <a href="post.html?id=${post}" class="blog-link" aria-label="read more about ${title}">Read more</a>
       </figure> 
-      <li>`;
+      </li>`;
     }
   } catch (error) {
     console.log(error);

@@ -1,4 +1,4 @@
-const form = document.querySelector("#contact-form");
+const form = document.querySelector("#contactForm");
 const fullName = document.querySelector("#fullName");
 const subject = document.querySelector("#subject");
 const email = document.querySelector("#email");
@@ -12,6 +12,7 @@ const cMessageError = document.querySelector("#contactMessageError");
 
 function validateForm(e) {
   var isValidated = true;
+  e.preventDefault();
 
   if (validateLength(fullName.value, 5) === true) {
     fullNameError.style.display = "none";
@@ -57,23 +58,23 @@ function validateLength(value, len) {
   }
 }
 
-const formURL = "https://ineaw.no/the-green-side/wp-json/contact-form-7/v1/contact-forms/354/feedback"
+const formURL = "https://ineaw.no/the-green-side/wp-json/contact-form-7/v1/contact-forms/354/feedback";
 
-contactForm.addEventListener("submit", validateForm);
+form.addEventListener("submit", validateForm);
 
-const handleSubmit = async (e) => {
-   e.preventDefault();
+// const handleSubmit = async (e) => {
+//    e.preventDefault();
 
-  const form = e.target,
-    { action, method } = form,
-    const body = new FormData(form);
+//   const form = e.target,
+//     { action, method } = form,
+//     const body = new FormData(form);
 
-  fetch(action, {
-    method,
-    body,
-  })
-    .then((response) => response.json())
-    .catch((error) => {
-      console.log(error);
-    });
-};
+//   fetch(action, {
+//     method,
+//     body,
+//   })
+//     .then((response) => response.json())
+//     .catch((error) => {
+//       console.log(error);
+//     });
+// };

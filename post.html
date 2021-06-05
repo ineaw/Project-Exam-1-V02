@@ -25,10 +25,10 @@
           <nav class="nav-content">
             <button aria-label="close navigation" class="close-nav">×</button>
             <ul class="nav-links">
-              <li><a href="index.html" class="nav-link" aria-label="Home page">Home</a></li>
-              <li><a href="blog.html" class="nav-link" aria-label="Blog page">Blog</a></li>
-              <li><a href="about.html" class="nav-link" aria-label="About me">About</a></li>
-              <li><a href="contact.html" class="nav-link" aria-label="Contact me">Contact</a></li>
+              <li><a href="index.html" id="homenav" class="nav-link" aria-label="Home page">Home</a></li>
+              <li><a href="blog.html" id="blognav" class="nav-link" aria-label="Blog page">Blog</a></li>
+              <li><a href="about.html" id="aboutnav" class="nav-link" aria-label="About me">About</a></li>
+              <li><a href="contact.html" id="contactnav" class="nav-link" aria-label="Contact me">Contact</a></li>
             </ul>
           </nav>
         </div>
@@ -45,15 +45,13 @@
         <section class="post-container">
       <div class="modal-button" role="button" aria-label="open modal"  id="open-modal" data-open="post-modal">
         <figure class="post-image">
-<div class="loader"></div>
-</figure>
+      <div class="loader"></div>
+        </figure>
       </div>
-          </figure>
           <div class="text-container">
           <div class="blog-text">
           </div>
         </div>
-          </figure>
         </section>
         <aside class="sideposts">
           <section>
@@ -68,32 +66,33 @@
           <input type="text" placeholder="Enter your e-mail address" id="signup-email" name="newsletter" aria-label="newsletter sign-up form">
               <button class="btn signup" role="button">Sign up</button>
               <div class="email-error"></div>
-              </div>
+            </div>
           </div>
+        </section>
         </section>
         </aside>
       <section class="comment-section">
-<form id="comment-field">
-  <input type="hidden" id="postId">
-  <div>
-  <label for="name">
-  Name*
-</label>
-  <input id="name" type="text"/>
-</div>
-<label for="email">
-  Email*
-</label>
-  <input id="email" type="email" placeholder="Enter valid email"/>
-</div>
-<label for="comment">
-  Comment*
-</label>
-<textarea name="comment" placeholder="Minimum 20 characters" id="comment"></textarea>
-</div>
-<button id="button" class="btn submit-comment">Post Comment!</button>
-</form>
-<div class="comment"></div>
+      <form id="comment-field">
+        <input type="hidden" id="postID">
+        <div>
+     <label for="name">
+         Name*
+      </label>
+        <input id="name" type="text"/>
+        </div>
+      <label for="email">
+        Email*
+      </label>
+        <input id="email" type="email" placeholder="Enter valid email"/>
+        </div>
+      <label for="comment">
+        Comment*
+       </label>  
+       <textarea name="comment" placeholder="Minimum 20 characters" id="comment"></textarea>
+        </div>
+      <button id="button" class="btn submit-comment" disabled>Post Comment!</button>
+      </form>
+       <div class="comment"></div>
       </section>
     </article>
     </main>

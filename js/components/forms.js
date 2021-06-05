@@ -8,7 +8,7 @@ function emailValidation() {
     emailError.innerHTML = "";
     isValidated = true;
   } else {
-    event.preventDefault();
+    e.preventDefault();
     emailError.innerHTML = "<p>Please enter valid email address</p>";
     isvalidated = false;
   }

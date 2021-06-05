@@ -46,7 +46,7 @@ function createHTML(result) {
 morePosts.addEventListener("click", () => {
   async function getPosts(url) {
     try {
-      const response = await fetch(url + `?per_page=12` + `&_embed`);
+      const response = await fetch(url + `?per_page=100` + `&_embed`);
       const results = await response.json();
       console.log(results);
       for (let i = 10; i < results.length; i++) {
@@ -78,6 +78,9 @@ morePosts.addEventListener("click", () => {
   getPosts(url);
 });
 
+let page = 1;
+let totalpages = null;
+
 // filterCategory.addEventListener("change", (e) => {
 //   const value = e.target.value;
 
@@ -101,7 +104,7 @@ async function displayCategories() {
     const categories = await response.json();
 
     for (let i = 0; i < categories.length; i++) {
-      categoriesContainer.innerHTML += `<a href="category.html?id=${categories[i].id}" class="changeCat"> ${categories[i].name} </a>`;
+      categoriesContainer.innerHTML += `<a href="category.html?id=${categories[i].id}"class="changeCat">${categories[i].name}</a>`;
     }
   } catch (error) {
     console.log(error);

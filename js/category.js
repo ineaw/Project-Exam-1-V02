@@ -1,7 +1,8 @@
 const postContainer = document.querySelector(".blog-grid");
-const morePosts = document.querySelector("#more");
+const header = document.querySelector(".blog-page-header");
 const loader = document.querySelector(".loader");
 const filterCategory = document.getElementById("filter-category");
+
 let optionsCat = "";
 
 const queryString = document.location.search;
@@ -55,6 +56,9 @@ async function displayCategories() {
     const categories = await response.json();
 
     for (let i = 0; i < categories.length; i++) {
+      header.innerHTML = `
+      <h1>${categories["0"].name}</h1>`;
+
       categoriesContainer.innerHTML += `<a href="category.html?id=${categories[i].id}" class="changeCat"> ${categories[i].name} </a>`;
     }
   } catch (error) {

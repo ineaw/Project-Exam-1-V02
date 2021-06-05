@@ -1,7 +1,18 @@
+#contactnav::after {
+  content: "";
+  position: absolute;
+  background: var(--green);
+  width: 100%;
+  height: 3px;
+  bottom: -2px;
+  left: 0;
+}
+
 #contactForm {
   max-width: 600px;
   background-color: var(--lila-accent);
   padding: 2em;
+  margin-bottom: 4em;
 }
 
 #contactForm label {

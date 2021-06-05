@@ -78,27 +78,37 @@ typography
     Featured Posts Carousel
     ===== */
 
-.carousel-container {
-  padding: 3em;
-}
+/* .carousel-container {
+  padding: 6em;
+} */
 
 .carousel-wrap {
   display: flex;
+  justify-content: space-around;
   flex-wrap: nowrap;
-  max-width: 100vw;
+  /* background-color: aqua; */
+  max-width: 80vw;
+  padding-left: 0px;
 }
 
 .carousel {
   display: flex;
   flex-direction: row;
-  overflow-x: scroll;
-  overflow-y: hidden;
+  overflow: auto;
+  align-items: center;
+  /* overflow-: hidden; */
   width: 100%;
-  max-width: 90vw;
+  scrollbar-width: none;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
-  scroll-padding: 50%;
+  /* scroll-padding: 50%; */
   padding: 1em;
+  /* margin-left: 0px;
+  left: 0px; */
+}
+
+.carousel::-webkit-scrollbar {
+  height: 0;
 }
 
 .carousel-container button {
@@ -115,11 +125,13 @@ typography
 }
 
 #next-btn {
+  margin-top: 30vh;
   right: 0;
   margin-right: 0px;
 }
 
 #prev-btn {
+  margin-top: 30vh;
   left: 0;
   margin-left: 0px;
 }
@@ -135,22 +147,23 @@ typography
 .carousel-card {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
-  max-width: 300px;
-  height: auto;
-  margin-right: 2em;
+  width: 100%;
+  /* height: auto; */
+  margin: 3em;
   padding-bottom: 1em;
-}
-
-.carousel-card {
   overflow: hidden;
   scroll-snap-align: center;
 }
 
+.carousel-card {
+  scroll-snap-align: center;
+}
+
 .carousel-card img {
-  max-width: 100%;
-  height: 250px;
+  width: 100%;
+  height: 200px;
   object-fit: cover;
   transition: transform 0.5s ease;
 }
