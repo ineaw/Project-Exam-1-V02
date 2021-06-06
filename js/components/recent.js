@@ -1,4 +1,4 @@
-let api = "https://ineaw.no/the-green-side/wp-json/wp/v2/posts?_embed";
+let api = "https://ineaw.no/thegreen-side/wp-json/wp/v2/posts?_embed";
 const aside = document.querySelector(".sideposts-recent");
 
 async function getRecent() {

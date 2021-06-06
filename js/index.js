@@ -1,4 +1,4 @@
-const url = "https://ineaw.no/the-green-side/wp-json/wp/v2/posts";
+const url = "https://ineaw.no/thegreen-side/wp-json/wp/v2/posts";
 
 const recentPosts = document.querySelector(".new-post-wrap");
 const aside = document.querySelector(".sideposts");

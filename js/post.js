@@ -1,4 +1,4 @@
-const url = "https://ineaw.no/the-green-side/wp-json/wp/v2/posts/";
+const url = "https://ineaw.no/thegreen-side/wp-json/wp/v2/posts/";
 
 const postContainer = document.querySelector(".blog-text");
 const postImage = document.querySelector(".post-image");

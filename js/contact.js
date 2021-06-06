@@ -58,7 +58,7 @@ function validateLength(value, len) {
   }
 }
 
-const formURL = "https://ineaw.no/the-green-side/wp-json/contact-form-7/v1/contact-forms/354/feedback";
+const formURL = "https://ineaw.no/thegreen-side/wp-json/contact-form-7/v1/contact-forms/354/feedback";
 
 form.addEventListener("submit", validateForm);
 
