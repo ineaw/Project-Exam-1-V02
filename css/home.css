@@ -101,10 +101,8 @@ typography
   scrollbar-width: none;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
-  /* scroll-padding: 50%; */
-  padding: 1em;
-  /* margin-left: 0px;
-  left: 0px; */
+  scroll-padding: 50%;
+  padding: 1em 0em;
 }
 
 .carousel::-webkit-scrollbar {
@@ -125,13 +123,11 @@ typography
 }
 
 #next-btn {
-  margin-top: 30vh;
   right: 0;
   margin-right: 0px;
 }
 
 #prev-btn {
-  margin-top: 30vh;
   left: 0;
   margin-left: 0px;
 }
@@ -147,23 +143,20 @@ typography
 .carousel-card {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
-  width: 100%;
-  /* height: auto; */
-  margin: 3em;
+  width: 70vw;
+  height: auto;
+  margin-right: 1.5em;
+  margin-left: 1em;
   padding-bottom: 1em;
   overflow: hidden;
   scroll-snap-align: center;
 }
 
-.carousel-card {
-  scroll-snap-align: center;
-}
-
 .carousel-card img {
   width: 100%;
-  height: 200px;
+  height: auto;
   object-fit: cover;
   transition: transform 0.5s ease;
 }
@@ -310,6 +303,23 @@ typography
 
   .newsletter input:focus {
     background-color: var(--white);
+  }
+
+  .carousel-card {
+    width: 100%;
+    height: auto;
+    margin-right: 3em;
+    padding-bottom: 1em;
+  }
+
+  .carousel-card {
+    max-width: 250px;
+    margin-right: 2em;
+    padding-bottom: 1em;
+  }
+
+  .carousel-card img {
+    max-width: 250px;
   }
 }
 

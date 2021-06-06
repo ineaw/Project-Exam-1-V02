@@ -107,12 +107,6 @@ Blog Post
   opacity: 1;
 }
 
-/* additional */
-/* .care-info {
-    grid-area: careinfo;
-    text-align: center;
-  } */
-
 .blog-header::after {
   content: "";
   display: block;

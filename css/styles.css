@@ -324,20 +324,6 @@ Footer
   padding: 1em;
 }
 
-/* Nav Animations */
-
-/* .nav-link:hover,
-.nav-link:focus,
-.breadcrumbs a:hover,
-.breadcrumbs a:focus,
-.footer-link a:hover,
-.social-link a:hover,
-.footer-link:focus,
-.social-link:focus {
-  text-decoration: 3px solid underline;
-  text-underline-position: under;
-} */
-
 /* Nav animations */
 
 .nav-link::before,
