@@ -78,15 +78,14 @@ typography
     Featured Posts Carousel
     ===== */
 
-/* .carousel-container {
-  padding: 6em;
-} */
+.carousel-container {
+  padding: 3em 0em;
+}
 
 .carousel-wrap {
   display: flex;
   justify-content: space-around;
   flex-wrap: nowrap;
-  /* background-color: aqua; */
   max-width: 80vw;
   padding-left: 0px;
 }
@@ -96,7 +95,6 @@ typography
   flex-direction: row;
   overflow: auto;
   align-items: center;
-  /* overflow-: hidden; */
   width: 100%;
   scrollbar-width: none;
   scroll-behavior: smooth;
